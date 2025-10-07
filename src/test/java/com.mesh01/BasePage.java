@@ -65,7 +65,7 @@ public class BasePage {
     protected void click(WebElement element) {
         wait = new WebDriverWait(driver, Duration.ofSeconds(explicitWaitInSeconds));
         wait.until(ExpectedConditions.elementToBeClickable(element));
-        scrollIntoView(element);
+        sleepForDuration();
         element.click();
         logger.debug("we click element " + element);
     }
