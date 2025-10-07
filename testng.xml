@@ -7,7 +7,7 @@
     
     <test verbose="2" preserve-order="true" name="All Tests">
         <classes>
-            <class name="com.mesh01.tests.FeedbackfunctionalityTest"/>
+            <class name="com.mesh01.tests.FeedbackFunctionalityTest"/>
         </classes>
     </test>
 </suite>
