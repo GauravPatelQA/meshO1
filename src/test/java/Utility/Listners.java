@@ -43,7 +43,7 @@ public class Listners implements ITestListener {
         }
         // Attach screenshot to Allure on failure
         try {
-            ScreenshotUtility2.captureScreenshot();
+            //ScreenshotUtility2.captureScreenshot();
         } catch (Exception e) {
             // Optionally log or handle
         }

@@ -10,6 +10,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ScreenshotUtility {
+    public static WebDriver driver;
 
     /*
     To Take the screenshot utilty this use the type casting fo driver as driver do not have
@@ -18,7 +19,7 @@ public class ScreenshotUtility {
 
     public static String takeScreenshot() {
         try {
-            TakesScreenshot screenshot = (TakesScreenshot) DriverInit.getDriverThread();
+            TakesScreenshot screenshot = (TakesScreenshot) driver;
             String userDir = System.getProperty("user.dir");
             String dayWiseFolderPath = DayWiseFolderUtility.getDayWiseFolderPath(userDir + File.separator + "Screenshots");
             String timestamp = new SimpleDateFormat("HHmmssSSS").format(new Date());
